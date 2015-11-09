@@ -1,0 +1,439 @@
+body{
+	background: url("../Imagenes/mac.jpg") no-repeat;
+	background-size: cover;
+}
+
+
+#menu {
+padding: 50px;
+margin-left: 12%;
+display:block;
+margin-bottom: 50px;
+}
+
+#menu > li {
+float: left;
+margin: 2px;
+}
+
+#menu li a {
+font-family: Arial;
+font-size:20px;
+text-decoration: none;
+padding: 40px;
+background-color: rgba(9, 0, 26, 0.2);
+color: #fff;
+
+}
+
+#menu li a:hover {
+background-color: rgba(9, 0, 26, 0.10);
+padding-bottom: 40px;
+}
+
+#historia {
+	width: auto;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 40px;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	top: 10px;
+}
+
+#historia p{
+	font-size: 20px;
+	font-family: cursive;
+	padding: 14px;
+	text-align: justify;
+}
+
+
+footer {
+
+display: table;
+margin: auto;
+text-align: center;
+width: 50%;
+margin-top: 5%;
+
+border:2px solid white;
+
+border-radius: 5px 5px 5px 5px;
+
+box-shadow: 0px 0px 10px pink;
+background: rgba(255,255,255,0.2);
+
+color: black;
+clear: both;
+ }
+
+ .titulo{
+ 	text-align: center;
+ 	text-decoration: underline;
+
+ }
+
+#ev1{
+	margin-top: 40px;
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: cursive;
+	margin-left: 50px;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	float:left;
+}
+
+#ev2{
+	margin-top: 40px;
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: cursive;
+	margin-left: 100px;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	float: left;
+}
+
+#ev3{
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;	
+	font-family: cursive;
+	margin-top: -380px;
+	margin-left: 50px;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	float:left;
+}
+
+#ev4{
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: cursive;
+	margin-top: -167px;
+	margin-left: 50px;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	float: left;
+	margin-bottom: 80px;
+}
+
+
+
+ #porcentaje{
+ 	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 40px;
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: arial;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	margin-bottom: 5px;
+	clear: both;
+}
+
+ 
+	#menu li ul{
+		list-style:none;
+		
+	}
+
+
+	#menu li ul li {
+		position:relative;
+
+	}
+	nav  ul li ul {
+		display:none;
+		position:absolute;
+		min-width:140px;
+
+	}
+	nav ul li:hover > ul {
+		display:block;
+
+	}
+	nav ul li ul li {
+		display: block!important;
+		position: relative;
+		top: 50px;
+		background-color: rgba(9, 0, 26, 0.50);
+		color: #fff;
+		text-align: center;
+		left: -35px;
+		padding: 5px;
+		font-family: Arial;
+		font-size: 17px;
+	}
+	nav ul li ul li:hover {
+		background-color: rgba(9, 0, 26, 0.60);
+	}
+
+	nav ul li ul li a {
+		padding: 0!important;
+		background-color: transparent!important;
+	}
+
+#carac{
+	width: auto;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 40px;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	top: 10px;
+}
+
+
+#carac li{
+	font-size: 20px;
+	font-family: cursive;
+	padding: 14px;
+	text-align: justify;
+}
+
+#vende{
+	margin-left: auto;
+ 	margin-right: auto;
+ 	margin-top: 40px;
+	padding: 14px;
+	text-align: justify;
+	color: black;
+	font-size: 15px;
+	font-family: arial;
+	width: 40%;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	margin-bottom: 5px;
+	clear: both;
+}
+
+#vende li{
+	font-size: 20px;
+	font-family: cursive;
+	padding: 14px;
+	text-align: justify;
+}
+
+#actualizacion{
+	width: auto;
+	margin-left: 150px;
+	margin-right: 150px;
+	margin-top: 40px;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	background: rgba(255,255,255,0.2);
+	top: 10px;
+}
+
+#actualizacion p{
+	font-size: 20px;
+	font-family: cursive;
+	padding: 14px;
+	text-align: justify;
+}
+#imagen1{
+	background: url("../Imagenes/sistema1.gif") no-repeat;
+	background-size: cover;
+	float: left;
+	border: solid;
+	margin-left: 100px;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	width: 385px;
+	height: 264px;
+	margin-top: 50px;
+}
+
+#imagen2{
+	background: url("../Imagenes/sistema2.jpg") no-repeat;
+	background-size: cover;
+	float: left;
+	border: solid;
+	margin-left: 360px;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	width: 385px;
+	height: 264px;
+	margin-top: 50px;
+}
+
+#imagen3{
+	background: url("../Imagenes/sistema3.jpg") no-repeat;
+	background-size: cover;
+	float: left;
+	border: solid;
+	margin-left: 100px;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	width: 385px;
+	height: 264px;
+	margin-top: 50px;
+}
+
+#imagen4{
+	background: url("../Imagenes/sistema4.jpg") no-repeat;
+	background-size: cover;
+	float: left;
+	border: solid;
+	margin-left: 360px;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	width: 385px;
+	height: 264px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#video{
+	background: url("../video/video.jpg") no-repeat;
+	background-size: cover;
+	float: left;
+	border: solid;
+	margin-left: 454px;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	width: 385px;
+	height: 264px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#inicio{
+	background-image: url("../Imagenes/inicio.jpg");
+	background-size: cover;
+	width: 40px;
+	height: 52px;
+	margin-top: -102px;
+	margin-right: 119px;
+	float: right;
+}
+
+#imagenoferta{
+	background-image: url("../Imagenes/yosemite.jpg") ;
+	background-size: cover;
+	float: left;
+	width: 442px;
+	height: 264px;
+	margin-top: 50px;
+	margin-left: 150px;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+}
+
+#descripcionoferta{
+	background: rgba(255,255,255,0.2); 
+	margin-left: 60px;
+	float: left;
+	width: 582;
+	height: auto;
+	margin-top: 50px;
+	border:solid;
+	border-width: 2px;
+	border-color: white;
+	border-radius: 10px 10px 10px 10px;
+	box-shadow: 0px 0px 10px white;
+	margin-bottom: 50px;
+}
+
+#descripcionoferta p{
+	font-size: 20px;
+	font-family: cursive;
+	padding: 14px;
+	text-align: justify;
+}
+
+#inicioright{
+	background-image: url("../Imagenes/inicio.jpg");
+	background-size: cover;
+	width: 40px;
+	height: 52px;
+	margin-top: -102px;
+	margin-left: 92px;
+}
+
+#letrainicio{
+	font-size: 14px;
+	color: white;
+	margin-left: 95px;
+	margin-top: -30px;
+}
+
+a{
+	text-decoration: none;
+}
+
+#letravideo{
+	font-size: 14px;
+	color: white;
+	float: right;
+	margin-top: -30px;
+	margin-right: 123px;
+
+}
+

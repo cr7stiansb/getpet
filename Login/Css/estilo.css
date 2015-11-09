@@ -1,0 +1,73 @@
+body{
+    background-image: url(../img/fondo.jpg);
+}
+
+#session{
+margin-left: 700px;
+margin-top: -5px;
+}
+
+#sesion {
+   margin-bottom: 5%;
+    background: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 4%;
+    margin-left: 0;
+}
+
+#registro{
+    margin-bottom: 5%;
+    margin-left: 71%;
+    height: 300px;
+    width: 380px;
+    border-radius: 5px
+}
+
+#tit{
+    
+    color: aliceblue;
+    font-family: fantasy;
+    text-shadow: 1px 1px black;
+    margin-left: 15%;
+}
+
+.cajatext{
+   border-radius: 10px;
+    
+}
+
+#registro{
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.subti{
+    color: white;
+    font-family: sans-serif;
+}
+
+#foot1{
+	margin: auto;
+	width: 100%;
+	color: #000;
+	text-align: center;
+	background: rgba(255, 255, 255, 0.5);
+}
+
+#registrotit{
+    font-size: 40px;
+    color: aliceblue;
+    font-family: fantasy;
+    text-shadow: 1px 1px black;
+}
+
+.form-group{
+    margin-bottom: 5px;
+}
+
+.cajatexts{
+    border-radius: 10px;
+    width: 70%;
+    height: 30px;
+}
+

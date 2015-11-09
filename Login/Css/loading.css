@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(0,0,0,0.2);
+}
+
+#loading{
+    margin-top: 35%;
+    margin-left: 25%;
+    width: 500px;
+    display: block;
+}
+
+#logo{
+    margin-top: -30%;
+    margin-left: 20%;
+}
+
+#tit{
+    margin-left: 38%;
+}
