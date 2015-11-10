@@ -52,8 +52,9 @@
                             <p><strong>Edad: </strong><?php echo $noanimales['edad'] ?></p>
                             <p><strong>Vacunado: </strong><?php echo $noanimales['vacunado'] ?></p>
                             <h3>Descripcion</h3>
-                            <p><?php echo $noanimales['descripcion'] ?></p>
+                            <p style="overflow:hidden; white-space:nowrap; text-overflow: ellipsis;"><?php echo $noanimales['descripcion'] ?></p>
                             <button class="btn btn-danger" name="Adopta" data-toggle="modal" data-target="#adoptar" id="btnadoptar">Adopta</button>
+                            <a class="btn btn-complete" href="index.php?page=fichaanimal&id=<?php echo $noanimales['id'] ?>"><button class="btn btn-complete" data-toggle="modal" data-target="#adoptar">Ver más</button></a>
                           </div>
                         </div>
                   </div>

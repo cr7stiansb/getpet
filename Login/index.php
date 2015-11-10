@@ -42,6 +42,12 @@
     <div class="col-md-offset-3">
     <?php
             $page = isset($_GET['page']) ? $_GET['page'] : '';
+
+            $patrRango = "/[fichaanimal]/";
+            $cadena = $page;
+            if (preg_match($patrRango, $cadena)) {
+                include('vistas/fichaanimal.php');
+            }
             
             switch($page){
                 case 'perdidos':
@@ -56,9 +62,10 @@
                 case 'darEnAdopcion':
                     include('vistas/darEnAdopcion.php');
                 break;
-                default:
-                    echo "Página principal";
             }
+
+            
+
             ?>
     </div>
 </div>
