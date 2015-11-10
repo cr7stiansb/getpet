@@ -1,7 +1,7 @@
 <?php
 	if (isset($_GET['id'])) {
 		echo "hola soy un perrito ". $_GET['id'];
-		// hace la consulta
+		// hace la consulta a la tabla perrito
 		if () {// debe validar que el id que llega si es valido
 			
 		}else{
