@@ -8,21 +8,19 @@
     $rpass = md5($rpass);
 
     include("conexion.php");
-    $checkmail=mysqli_query($link, "SELECT * FROM user WHERE user_email='$mail'");
+    $checkmail=mysqli_query($link, "SELECT * FROM usuarios WHERE email='$mail'");
     $check_mail=mysqli_num_rows($checkmail);
         if($pass==$rpass){
             if($check_mail>0){  
-                echo "<script> alert('Atencion, ys existe un usuario con ese email, verifique sus datos.')</script>";
+                echo "<script> alert('Atención, ya existe un usuario con ese email, verifique sus datos.')</script>";
                 echo"<script> location.href='../index.php'</script>";
             }else{
                 //require("conexion.php");
-                $sql = mysqli_query($link, "INSERT INTO user VALUES('','$nombre','$mail','$pass')");
+                $sql = mysqli_query($link, "INSERT INTO usuarios (nombre, apellido , cc, email, password, telefono, tipo_usuario) VALUES('$nombre','', '', '$mail','$pass','','usuario')");
 
                      echo "<script> alert('usuario registrado')</script>";
                      echo"<script> location.href='../index.php'</script>";
                 }
-            
-            
         }else{
             echo "<script> alert('Las contraseñas son incorrectas')</script>";
             echo"<script> location.href='../index.php'</script>";

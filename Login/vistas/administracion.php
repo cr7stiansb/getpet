@@ -55,10 +55,9 @@
                     <img src="../img/logo.png" alt="Get Pet" />
                 </a>
             </h1>
-    
+            
             <div class="container" id="container">
             <div class="btn-group pull-right inline">
-                <button type="button" id="btncuenta" class="btn"><?php  echo (isset($_SESSION['nombre_admin']))?$_SESSION['nombre_admin']:'Invitado'; ?></button> 
                 <button type="button" id="btncuenta" class="btn dropdown-toggle pull-right glyphicon glyphicon-menu-down" data-toggle="dropdown"></button>
                     <ul class="dropdown-menu" role="menu">
                         <li>
@@ -69,6 +68,8 @@
                         <a href="#">Soporte</a>
                         </li>-->
                     </ul>
+                <button type="button" id="btncuenta" class="btn"><?php  echo (isset($_SESSION['nombre_admin']))?$_SESSION['nombre_admin']:'Invitado'; ?></button> 
+                
             </div>
             </div>
             
@@ -81,28 +82,39 @@
         <thead>
         <th>Id</th>
         <th>Nombre</th>
+        <th>Apellido</th>
+        <th>C.C</th>
         <th>Email</th>  
         <th>Contraseña</th>
+        <th>Telefono</th>
+        <th>Tipo de usuario</th>
         <th></th>
         <th></th>
         </thead>
         <?php include('../modelo/conexion.php'); 
-        $usuarios = "SELECT * FROM user"; 
-        $vusuarios = mysqli_query($link , $usuarios);
-        while($noregistros = mysqli_fetch_assoc($vusuarios)){ ?>
-        <tbody>
-            <tr>
-                <td><?php echo $noregistros['user_id'] ?></td>
-                <td><?php echo $noregistros['user_nombre'] ?></td>
-                <td><?php echo $noregistros['user_email'] ?></td>
-                <td><?php echo $noregistros['user_contra'] ?></td>
-                <td><a href="#" class="glyphicon glyphicon-remove"></a></td>
-                <td><a href="#" class="glyphicon glyphicon-pencil"></a></td>
-            </tr>
-        </tbody>
-        <?php }
-            mysql_close($link);
-         ?>
+
+        
+            $usuarios = "SELECT * FROM usuarios WHERE tipo_usuario = 'usuario'"; 
+            $vusuarios = mysqli_query($link , $usuarios);
+            while($noregistros = mysqli_fetch_assoc($vusuarios)){ ?>
+            <tbody>
+                <tr>
+                    <td><?php echo $noregistros['id'] ?></td>
+                    <td><?php echo $noregistros['nombre'] ?></td>
+                    <td><?php echo $noregistros['apellido'] ?></td>
+                    <td><?php echo $noregistros['cc'] ?></td>
+                    <td><?php echo $noregistros['email'] ?></td>
+                    <td><?php echo $noregistros['password'] ?></td>
+                    <td><?php echo $noregistros['telefono'] ?></td>
+                    <td><?php echo $noregistros['tipo_usuario'] ?></td>
+                    <td><a href="#" class="glyphicon glyphicon-remove"></a></td>
+                    <td><a href="#" class="glyphicon glyphicon-pencil"></a></td>
+                </tr>
+            </tbody>
+            <?php }
+            mysqli_close($link);
+             ?>
+        
     </table>
 </div>
     

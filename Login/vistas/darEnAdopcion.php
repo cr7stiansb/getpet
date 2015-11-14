@@ -4,10 +4,6 @@
 <div class="container">
   <div class="" style="margin-right: 600px;">   
     <form action="modelo/adopcion.php" method="post" enctype="multipart/form-data">
-
-        <div class="form-group">
-              <input type="text" class="form-control" name="nombre" placeholder="Ingresa Nombre">
-        </div><br>
         <div class="form-group">
               <input type="text" class="form-control" name="edad" placeholder="Ingresa edad">
         </div><br>
@@ -20,7 +16,7 @@
               NO<input type="radio" class="fakeRadio" name="vacuna" value="no">
         </div>
         <div class="">
-              <textarea type="text" class="" name="descripcion" placeholder="Enter descripcion" cols="20" rows="6"> </textarea> 
+              <textarea type="text" class="" name="descripcion" placeholder="Enter descripcion" cols="20" rows="6"  required> </textarea> 
         </div>
         <hr class="">
        

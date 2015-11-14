@@ -11,7 +11,7 @@
 
     include("conexion.php");
 
-    $checkmail=mysqli_query($link, "SELECT * FROM administracion WHERE admin_email='$mail'");
+    $checkmail=mysqli_query($link, "SELECT * FROM usuarios WHERE email='$mail'");
     $check_mail=mysqli_num_rows($checkmail);
         if($pass==$rpass){
             if($check_mail>0){  
@@ -19,7 +19,7 @@
                 echo"<script> location.href='../vistas/registrarAdmin.php'</script>";
             }else{
                 //require("conexion.php");
-                $sql = mysqli_query($link, "INSERT INTO administracion (admin_nombre, admin_cc, admin_email, admin_pass) VALUES ('$nombre','$cc','$mail','$pass')");
+                $sql = mysqli_query($link, "INSERT INTO usuarios (nombre, apellido , cc, email, password, telefono, tipo_usuario) VALUES ('$nombre','', '$cc', '$mail', '$pass', '', 'administrador')");
 
                      echo "<script> alert('Administrador registrado')</script>";
                      echo"<script> location.href='../vistas/admin.php'</script>";

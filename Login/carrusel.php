@@ -4,7 +4,7 @@
     background: #2f4357;
     margin-top: 20px;
     width: 100%;
-    height: 382px;
+    height: 400px;
 }
 .carousel .item img{
     margin: 0 auto;

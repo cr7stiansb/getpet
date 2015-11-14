@@ -39,7 +39,7 @@
     
     include("conexion.php");
 
-    $sql = mysqli_query($link, "INSERT INTO adopcion (nombre, edad, raza, vacunado, descripcion, foto) VALUES ('$nombre','$edad','$raza','$vacuna','$descripcion','$destino')");
+    $sql = mysqli_query($link, "INSERT INTO adopcion (edad, raza, vacunado, descripcion, foto) VALUES ('$edad','$raza','$vacuna','$descripcion','$destino')");
 
     $id = mysqli_insert_id($link);
     $fotoid = $id."_".$destino;

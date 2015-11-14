@@ -43,12 +43,6 @@
     <?php
             $page = isset($_GET['page']) ? $_GET['page'] : '';
 
-            $patrRango = "/[fichaanimal]/";
-            $cadena = $page;
-            if (preg_match($patrRango, $cadena)) {
-                include('vistas/fichaanimal.php');
-            }
-            
             switch($page){
                 case 'perdidos':
                     include('vistas/perdidos.php');
@@ -56,12 +50,24 @@
                 case 'encontrados':
                     include('vistas/encontrados.php');
                 break;
-                 case 'adoptar':
+                case 'adoptar':
                     include('vistas/adoptar.php');
                 break;
                 case 'darEnAdopcion':
                     include('vistas/darEnAdopcion.php');
                 break;
+                case 'fichaanimalencontrado':
+                    include('vistas/fichaanimalencontrado.php');
+                break;
+                case 'fichaanimalperdido':
+                    include('vistas/fichaanimalperdido.php');
+                break;
+                case 'fichaanimal':
+                    include('vistas/fichaanimal.php');
+                break;
+                default:
+                echo "Bienvenido a la pagina principal";
+                
             }
 
             
@@ -102,7 +108,6 @@ $(document).ready(function(){
         return false;
     }); 
 })
-    
 </script>
      
 </body>
